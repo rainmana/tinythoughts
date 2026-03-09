@@ -1,0 +1,24 @@
+name: five_whys
+description: Root cause analysis by asking "why" five times
+type: debugging
+steps:
+  - name: identify_problem
+    description: State the problem clearly
+    prompt: What is the problem you're trying to solve?
+  - name: first_why
+    description: Ask why the problem occurs
+    prompt: Why does this problem occur?
+  - name: second_why
+    description: Ask why the first answer is true
+    prompt: Why is that the case?
+  - name: third_why
+    description: Continue drilling down
+    prompt: Why does that happen?
+  - name: fourth_why
+    description: Get closer to root cause
+    prompt: What causes that?
+  - name: fifth_why
+    description: Identify the root cause
+    prompt: What is the fundamental reason?
+prompts:
+  conclusion: "Based on the five whys, what is the root cause and how should it be addressed?"

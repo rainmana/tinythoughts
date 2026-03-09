@@ -1,0 +1,21 @@
+name: inversion
+description: Think about the opposite of what you want to achieve
+type: mental_model
+steps:
+  - name: define_goal
+    description: State your goal clearly
+    prompt: What are you trying to achieve?
+  - name: invert_goal
+    description: Consider the opposite
+    prompt: What would guarantee failure? What would make this worse?
+  - name: identify_risks
+    description: List the risks and pitfalls
+    prompt: What are the specific ways this could go wrong?
+  - name: create_safeguards
+    description: Design protections against failure modes
+    prompt: How can you prevent or mitigate each risk?
+  - name: apply_insights
+    description: Use inverted thinking to improve your approach
+    prompt: What insights does this give you about your original goal?
+prompts:
+  conclusion: "How does thinking inversely change your approach to the problem?"

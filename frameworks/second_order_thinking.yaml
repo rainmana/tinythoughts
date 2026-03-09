@@ -1,0 +1,21 @@
+name: second_order_thinking
+description: Consider consequences of consequences
+type: mental_model
+steps:
+  - name: first_order
+    description: Identify immediate effects
+    prompt: What are the direct, immediate consequences of this decision?
+  - name: second_order
+    description: Consider downstream effects
+    prompt: What happens as a result of those consequences?
+  - name: third_order
+    description: Look even further ahead
+    prompt: What are the long-term ripple effects?
+  - name: stakeholder_impact
+    description: Consider different perspectives
+    prompt: How do these effects impact different stakeholders?
+  - name: synthesis
+    description: Integrate insights
+    prompt: What does this chain of consequences tell you about the decision?
+prompts:
+  conclusion: "What are the most important second and third order effects to consider?"

@@ -1,0 +1,11 @@
+# tinythoughts configuration file
+# Place this at ~/.config/tinythoughts/tinythoughts.yaml
+
+# Directory containing custom framework YAML files
+frameworks_dir: ~/.config/tinythoughts/frameworks
+
+# File to persist session state
+session_file: ~/.config/tinythoughts/session.json
+
+# Output format: json or text
+output_format: json
