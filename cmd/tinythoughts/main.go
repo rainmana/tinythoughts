@@ -8,9 +8,9 @@ import (
 
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
-	"github.com/waldzellai/tinythoughts/internal/config"
-	"github.com/waldzellai/tinythoughts/internal/engine"
-	"github.com/waldzellai/tinythoughts/internal/types"
+	"github.com/rainmana/tinythoughts/internal/config"
+	"github.com/rainmana/tinythoughts/internal/engine"
+	"github.com/rainmana/tinythoughts/internal/types"
 )
 
 var (

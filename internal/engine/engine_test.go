@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/waldzellai/tinythoughts/internal/types"
+	"github.com/rainmana/tinythoughts/internal/types"
 )
 
 func TestNew(t *testing.T) {

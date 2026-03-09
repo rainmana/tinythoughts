@@ -6,7 +6,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/waldzellai/tinythoughts/internal/types"
+	"github.com/rainmana/tinythoughts/internal/types"
 	"gopkg.in/yaml.v3"
 )
 

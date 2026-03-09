@@ -1,4 +1,4 @@
-module github.com/waldzellai/tinythoughts
+module github.com/rainmana/tinythoughts
 
 go 1.25.6
 
