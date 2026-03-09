@@ -116,9 +116,52 @@ var frameworksCmd = &cobra.Command{
 	Use:   "frameworks",
 	Short: "List available frameworks",
 	Run: func(cmd *cobra.Command, args []string) {
+		verbose, _ := cmd.Flags().GetBool("verbose")
 		frameworks := eng.ListFrameworks()
+		
+		if !verbose {
+			for _, name := range frameworks {
+				fmt.Println(name)
+			}
+			return
+		}
+		
+		// Verbose mode: show descriptions
 		for _, name := range frameworks {
-			fmt.Println(name)
+			fw, err := eng.GetFramework(name)
+			if err != nil {
+				fmt.Println(name)
+				continue
+			}
+			fmt.Printf("%s - %s\n", name, fw.Description)
+		}
+	},
+}
+
+var describeCmd = &cobra.Command{
+	Use:   "describe [framework-name]",
+	Short: "Describe a framework and when to use it",
+	Args:  cobra.ExactArgs(1),
+	Run: func(cmd *cobra.Command, args []string) {
+		fw, err := eng.GetFramework(args[0])
+		if err != nil {
+			fmt.Fprintf(os.Stderr, "Framework not found: %s\n", args[0])
+			os.Exit(1)
+		}
+		
+		fmt.Printf("Framework: %s\n", fw.Name)
+		fmt.Printf("Type: %s\n", fw.Type)
+		fmt.Printf("Description: %s\n\n", fw.Description)
+		
+		fmt.Println("Steps:")
+		for i, step := range fw.Steps {
+			fmt.Printf("  %d. %s\n", i+1, step.Name)
+			fmt.Printf("     %s\n", step.Description)
+			fmt.Printf("     Prompt: %s\n", step.Prompt)
+		}
+		
+		if conclusion, ok := fw.Prompts["conclusion"]; ok {
+			fmt.Printf("\nConclusion: %s\n", conclusion)
 		}
 	},
 }
@@ -142,10 +185,13 @@ func init() {
 	debugCmd.Flags().StringP("findings", "f", "", "findings")
 	debugCmd.Flags().StringP("resolution", "r", "", "resolution")
 
+	frameworksCmd.Flags().BoolP("verbose", "v", false, "show framework descriptions")
+
 	rootCmd.AddCommand(thinkCmd)
 	rootCmd.AddCommand(modelCmd)
 	rootCmd.AddCommand(debugCmd)
 	rootCmd.AddCommand(frameworksCmd)
+	rootCmd.AddCommand(describeCmd)
 }
 
 func initConfig() {
