@@ -25,7 +25,6 @@ sudo mv tinythoughts /usr/local/bin/
 ### Using Go Install (requires a tagged release)
 
 ```bash
-# Once a release is tagged, you can install with:
 go install github.com/rainmana/tinythoughts/cmd/tinythoughts@latest
 ```
 
