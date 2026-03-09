@@ -1,0 +1,24 @@
+name: six_thinking_hats
+description: Examine problem from six different perspectives (Edward de Bono)
+type: mental_model
+steps:
+  - name: white_hat
+    description: Facts and information
+    prompt: What are the facts? What information do we have and need?
+  - name: red_hat
+    description: Emotions and intuition
+    prompt: What does your gut say? What are the emotional reactions?
+  - name: black_hat
+    description: Caution and risks
+    prompt: What could go wrong? What are the weaknesses and risks?
+  - name: yellow_hat
+    description: Benefits and optimism
+    prompt: What are the benefits? Why might this work?
+  - name: green_hat
+    description: Creativity and alternatives
+    prompt: What are creative alternatives? What new ideas emerge?
+  - name: blue_hat
+    description: Process and overview
+    prompt: What's the big picture? What have we learned from all perspectives?
+prompts:
+  conclusion: "Synthesizing all six perspectives, what's the best path forward?"

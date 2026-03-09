@@ -11,6 +11,28 @@ A lightweight CLI tool for systematic thinking, mental models, and debugging app
 - **Session Management**: Automatically saves your thinking sessions
 - **Environment Configuration**: Configure via YAML files or environment variables
 
+### Included Frameworks
+
+**Decision-Making**:
+- Regret Minimization (Jeff Bezos)
+- 10/10/10 Rule (time-based decisions)
+- Eisenhower Matrix (prioritization)
+- Circle of Competence (Warren Buffett)
+
+**Risk & Planning**:
+- Pre-Mortem Analysis
+- SWOT Analysis
+- Five Whys (root cause)
+- Inversion (think opposite)
+
+**Thinking & Analysis**:
+- Six Thinking Hats (Edward de Bono)
+- Second-Order Thinking
+- First Principles
+- And more...
+
+See [NEW_FRAMEWORKS.md](NEW_FRAMEWORKS.md) for detailed guides on each framework.
+
 ## Installation
 
 ### From Source

@@ -1,0 +1,21 @@
+name: regret_minimization
+description: Jeff Bezos's framework - minimize regret when you're 80 years old
+type: mental_model
+steps:
+  - name: define_decision
+    description: State the decision
+    prompt: What decision are you facing?
+  - name: imagine_future_self
+    description: Project yourself to age 80
+    prompt: Imagine you're 80 years old, looking back on your life. What matters?
+  - name: regret_if_yes
+    description: Regret from taking action
+    prompt: If you do this, what might you regret at 80?
+  - name: regret_if_no
+    description: Regret from not taking action
+    prompt: If you DON'T do this, what might you regret at 80?
+  - name: compare_regrets
+    description: Which regret is worse
+    prompt: Which regret would be harder to live with? Action or inaction?
+prompts:
+  conclusion: "To minimize regret at 80, what should you do?"

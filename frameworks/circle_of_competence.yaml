@@ -1,0 +1,24 @@
+name: circle_of_competence
+description: Understand what you know, what you don't know, and stay within your circle
+type: mental_model
+steps:
+  - name: define_domain
+    description: What area are you considering
+    prompt: What domain or decision are you evaluating?
+  - name: inside_circle
+    description: What you truly understand
+    prompt: What do you deeply understand in this domain? Where do you have real expertise?
+  - name: edge_of_circle
+    description: Boundary of your knowledge
+    prompt: Where does your knowledge become uncertain? What are the edges?
+  - name: outside_circle
+    description: What you don't know
+    prompt: What do you clearly not understand? What's outside your expertise?
+  - name: expand_or_stay
+    description: Decision point
+    prompt: Should you stay within your circle, or invest time to expand it?
+  - name: get_help
+    description: Identify expertise needed
+    prompt: If outside your circle, who has the expertise you need?
+prompts:
+  conclusion: "Are you operating within your circle of competence, or do you need help?"

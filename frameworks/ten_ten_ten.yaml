@@ -1,0 +1,21 @@
+name: ten_ten_ten
+description: Consider decision impact at 10 minutes, 10 months, and 10 years
+type: mental_model
+steps:
+  - name: define_decision
+    description: State the decision clearly
+    prompt: What decision are you trying to make?
+  - name: ten_minutes
+    description: Immediate impact
+    prompt: How will you feel about this decision in 10 minutes?
+  - name: ten_months
+    description: Medium-term impact
+    prompt: How will this decision affect you in 10 months?
+  - name: ten_years
+    description: Long-term impact
+    prompt: How will this decision matter in 10 years?
+  - name: compare_timeframes
+    description: Analyze the pattern
+    prompt: Does the decision look better or worse over time? Why?
+prompts:
+  conclusion: "Given all three timeframes, what's the right decision?"

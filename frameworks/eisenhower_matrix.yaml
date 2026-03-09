@@ -1,0 +1,21 @@
+name: eisenhower_matrix
+description: Prioritize tasks by urgency and importance
+type: mental_model
+steps:
+  - name: list_tasks
+    description: List all tasks or decisions
+    prompt: What are all the tasks or decisions you need to make?
+  - name: urgent_important
+    description: Quadrant 1 - Do First
+    prompt: Which tasks are both urgent AND important? (Do immediately)
+  - name: not_urgent_important
+    description: Quadrant 2 - Schedule
+    prompt: Which tasks are important but NOT urgent? (Schedule for later)
+  - name: urgent_not_important
+    description: Quadrant 3 - Delegate
+    prompt: Which tasks are urgent but NOT important? (Delegate if possible)
+  - name: not_urgent_not_important
+    description: Quadrant 4 - Eliminate
+    prompt: Which tasks are neither urgent nor important? (Eliminate or minimize)
+prompts:
+  conclusion: "What should you focus on right now, and what should you eliminate?"

@@ -1,0 +1,24 @@
+name: swot_analysis
+description: Analyze Strengths, Weaknesses, Opportunities, and Threats
+type: mental_model
+steps:
+  - name: define_context
+    description: What are you analyzing
+    prompt: What project, decision, or situation are you analyzing?
+  - name: strengths
+    description: Internal positive factors
+    prompt: What are your strengths? What advantages do you have?
+  - name: weaknesses
+    description: Internal negative factors
+    prompt: What are your weaknesses? What could be improved?
+  - name: opportunities
+    description: External positive factors
+    prompt: What opportunities exist? What trends could you leverage?
+  - name: threats
+    description: External negative factors
+    prompt: What threats do you face? What could harm your success?
+  - name: strategic_actions
+    description: Convert analysis to action
+    prompt: How can you use strengths to capture opportunities and mitigate threats?
+prompts:
+  conclusion: "What are the top 3 strategic actions based on this SWOT analysis?"

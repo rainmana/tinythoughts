@@ -1,0 +1,21 @@
+name: premortem
+description: Imagine the project failed and work backwards to identify risks
+type: mental_model
+steps:
+  - name: imagine_failure
+    description: Project has failed spectacularly
+    prompt: It's 6 months from now. The project failed completely. What happened?
+  - name: identify_causes
+    description: List specific reasons for failure
+    prompt: What were the top 3-5 reasons it failed?
+  - name: assess_likelihood
+    description: Evaluate probability of each failure mode
+    prompt: How likely is each failure scenario? (High/Medium/Low)
+  - name: identify_warning_signs
+    description: What signals would indicate trouble
+    prompt: What early warning signs would we see for each failure mode?
+  - name: create_mitigations
+    description: Design preventive measures
+    prompt: What can you do now to prevent each failure mode?
+prompts:
+  conclusion: "What are the 3 most critical risks to address immediately?"
