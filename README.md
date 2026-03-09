@@ -16,16 +16,25 @@ A lightweight CLI tool for systematic thinking, mental models, and debugging app
 ### From Source
 
 ```bash
-git clone https://github.com/waldzellai/tinythoughts
+git clone https://github.com/rainmana/tinythoughts
 cd tinythoughts
 go build -o tinythoughts ./cmd/tinythoughts
 sudo mv tinythoughts /usr/local/bin/
 ```
 
-### Using Go Install
+### Using Go Install (requires a tagged release)
 
 ```bash
-go install github.com/waldzellai/tinythoughts/cmd/tinythoughts@latest
+# Once a release is tagged, you can install with:
+go install github.com/rainmana/tinythoughts/cmd/tinythoughts@latest
+```
+
+### Quick Setup
+
+```bash
+make build
+make install
+make setup-config
 ```
 
 ## Quick Start
@@ -352,6 +361,18 @@ Apache License 2.0 - see LICENSE file for details.
 
 ## Acknowledgments
 
-- Based on the [clear-thought MCP server](https://github.com/waldzellai/waldzell-mcp/tree/main/servers/server-clear-thought)
-- Mental models inspired by [James Clear's guide](https://jamesclear.com/mental-models)
+This project is derived from the [clear-thought MCP server](https://github.com/waldzellai/waldzell-mcp/tree/main/servers/server-clear-thought) by Anthropic, PBC, which is licensed under the MIT License. The original MCP server provided the conceptual foundation for the thinking frameworks implemented here.
+
+Additional inspiration:
+- Mental models framework inspired by [James Clear's guide](https://jamesclear.com/mental-models)
 - Built with [Cobra](https://github.com/spf13/cobra) and [Viper](https://github.com/spf13/viper)
+
+## Original License Notice
+
+The clear-thought MCP server is:
+```
+MIT License
+Copyright (c) 2025 Anthropic, PBC
+```
+
+This derivative work (tinythoughts) is licensed under Apache License 2.0 (see LICENSE file).
